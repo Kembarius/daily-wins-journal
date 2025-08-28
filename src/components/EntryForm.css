@@ -1,0 +1,57 @@
+
+.date-input {
+    padding: 9px;
+    border-radius: 5px;
+    border: transparent; 
+    font-size: 16px;
+    font-family: inherit;
+    width: 100%;    
+    box-sizing: border-box;
+}
+.inputs-container {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.win-input {
+    padding: 9px;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 16px;
+    font-family: inherit;
+}
+.save-btn {
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #ffd257;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.save-btn:hover {
+  border-color: #646cff;
+}
+
+.update-btn {
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 700;
+  font-family: inherit;
+  background-color: #646cff;
+  color: #f3f3f3;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.update-btn:hover {
+  border-color: black;
+}
