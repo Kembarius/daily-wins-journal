@@ -27,7 +27,7 @@ function EntryForm({ entries, setEntries, win1, setWin1, win2, setWin2, win3, se
       setWin2('')
       setWin3('')
     }
-  }, [selectedDate, entries])
+  }, [selectedDate, entries, setWin1, setWin2, setWin3])
 
   function saveWins() {
     if ( !win1 || !win2 || !win3 ) {
