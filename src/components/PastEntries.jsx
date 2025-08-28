@@ -2,7 +2,7 @@ import dayjs from 'dayjs'
 import { useState } from 'react'
 import PastEntry from './PastEntry'
 
-function PastEntries({ entries, setEntries, setWin1, setWin2, setWin3, setSelectedDate, setIsEditable }) {
+function PastEntries({ entries, setEntries, setWin1, setWin2, setWin3, selectedDate, setSelectedDate, setIsEditable }) {
   const [ showEntries, setShowEntries ] = useState(2)
 
   const sortedEntriesArr = [...entries].sort((a, b) => {
@@ -24,7 +24,9 @@ function PastEntries({ entries, setEntries, setWin1, setWin2, setWin3, setSelect
  
   function handleDelete(id) {
     setEntries(prevEntries => prevEntries.filter((prevEntry) => prevEntry.date !== id))
-    setIsEditable(prev => !prev)
+    if (id === selectedDate) {
+      setIsEditable(prev => !prev)
+    }
   }
   
   return (

@@ -24,7 +24,7 @@ function App() {
   const [ win1, setWin1 ] = useState('')
   const [ win2, setWin2 ] = useState('')
   const [ win3, setWin3 ] = useState('')
-  const [selectedDate, setSelectedDate] = useState(dayjs().format('YYYY-MM-DD'))
+  const [ selectedDate, setSelectedDate ] = useState(dayjs().format('YYYY-MM-DD'))
   const [ isEditable, setIsEditable ] = useState(false)
 
   useEffect(() => {
