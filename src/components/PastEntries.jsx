@@ -24,6 +24,7 @@ function PastEntries({ entries, setEntries, setWin1, setWin2, setWin3, setSelect
  
   function handleDelete(id) {
     setEntries(prevEntries => prevEntries.filter((prevEntry) => prevEntry.date !== id))
+    setIsEditable(prev => !prev)
   }
   
   return (
