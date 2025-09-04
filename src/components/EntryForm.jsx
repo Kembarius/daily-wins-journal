@@ -80,7 +80,7 @@ function EntryForm({ entries, setEntries, win1, setWin1, win2, setWin2, win3, se
         />
         <Calendar className='input-calendar-icon' size={18} />
       </div>
-      <h2><PencilLine size={28} color='#ffd257' strokeWidth={2.75} /> What are your 3 wins today?</h2>
+      <h2><PencilLine size={28} color='#ffd257' strokeWidth={2.75} className='pencil-icon'/> What are your 3 wins today?</h2>
       <div className="inputs-container">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px'}}>
           <span style={{ minWidth: '20px', textAlign: 'center', fontWeight: '600'}}>1</span>

@@ -37,7 +37,7 @@ function App() {
 
   return (
     <>
-      <h1><Trophy size={38} color='#ffd257' strokeWidth={2.75} />Daily Wins Journal</h1>
+      <h1><Trophy size={38} color='#ffd257' strokeWidth={2.75} className='trophy-icon' />Daily Wins Journal</h1>
       <EntryForm 
         entries={entries} 
         setEntries={setEntries} 
