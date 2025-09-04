@@ -37,8 +37,9 @@ npm start
 
 1. **Daily Entry** - Add your 3 wins for today
 2. **Save Progress** - Click "Save Wins" to store your entries
-3. **Review History** - Browse past entries to see your growth
-4. **Stay Motivated** - Build a habit of recognizing daily achievements
+3. **Edit Entries** - Modify past wins with the edit button
+4. **Review History** - Browse past entries to see your growth
+5. **Stay Motivated** - Build a habit of recognizing daily achievements
 
 ## 🎯 Benefits
 
