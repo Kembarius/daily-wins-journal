@@ -9,16 +9,16 @@ function App() {
     {
       key: '2025-08-11',
       date: '2025-08-11',
-      win1: 'Prebral knjigo',
-      win2: 'Programiral 3 ure',
-      win3: 'Poklical frenda'
+      win1: 'Went for a 30-minute walk',
+      win2: 'Completed an online course module',
+      win3: 'Cleaned and organized my workspace'
     },
     {
       key: '2025-08-13',
       date: '2025-08-13',
-      win1: 'Se ful učil',
-      win2: 'Treniral na štangah',
-      win3: 'Gledal serijo - relax'
+      win1: 'Worked on my hobby project',
+      win2: 'Updated my expense tracking',
+      win3: 'Decluttered my email inbox'
     }
   ])
   const [ win1, setWin1 ] = useState('')
