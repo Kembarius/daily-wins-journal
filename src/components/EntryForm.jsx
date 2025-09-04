@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import dayjs from 'dayjs'
 import DatePicker from 'react-datepicker'
-import { Calendar } from 'lucide-react'
+import { Calendar, CheckCheck, PencilLine } from 'lucide-react'
 import "react-datepicker/dist/react-datepicker.css"
 import './EntryForm.css'
 
@@ -80,7 +80,7 @@ function EntryForm({ entries, setEntries, win1, setWin1, win2, setWin2, win3, se
         />
         <Calendar className='input-calendar-icon' size={18} />
       </div>
-      <h2>✏️What are your 3 wins today?</h2>
+      <h2><PencilLine size={28} color='#ffd257' strokeWidth={2.75} /> What are your 3 wins today?</h2>
       <div className="inputs-container">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px'}}>
           <span style={{ minWidth: '20px', textAlign: 'center', fontWeight: '600'}}>1</span>
@@ -122,7 +122,7 @@ function EntryForm({ entries, setEntries, win1, setWin1, win2, setWin2, win3, se
           />
         </div>
         {isEditable && <button className='update-btn' onClick={updateWins}>Update Wins</button>}
-        {!isEditable && <button className='save-btn' onClick={saveWins}>Save Wins ✔️</button>}
+        {!isEditable && <button className='save-btn' onClick={saveWins}>Save Wins <CheckCheck size={22} color='#667eea' strokeWidth={3} /></button>}
         {error && <p style={{ color: 'red' }}>{error}</p>}
       </div>
     </>

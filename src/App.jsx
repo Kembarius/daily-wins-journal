@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import { Trophy } from 'lucide-react'
 import dayjs from 'dayjs'
 import EntryForm from './components/EntryForm'
 import PastEntries from './components/PastEntries'
@@ -36,7 +37,7 @@ function App() {
 
   return (
     <>
-      <h1>🌟Daily Wins Journal</h1>
+      <h1><Trophy size={38} color='#ffd257' strokeWidth={2.75} />Daily Wins Journal</h1>
       <EntryForm 
         entries={entries} 
         setEntries={setEntries} 
