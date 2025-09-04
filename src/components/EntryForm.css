@@ -6,7 +6,7 @@
 }
 
 .date-input {
-    padding: 9px;
+    padding: 9px 15px;
     border-radius: 5px;
     border: transparent; 
     font-size: 16px;
@@ -33,13 +33,14 @@
 .react-datepicker {
   border-radius: 12px !important;
   overflow: hidden; 
+  font-size: 1rem;
 }
 
 .custom-datepicker {
   border: 1px solid #e1e5e9;
   border-radius: 8px;
   padding: 12px;
-  font-size: 16px;
+  font-size: 20px;
   width: 200px;
 }
 
@@ -60,11 +61,21 @@
 
 .react-datepicker__header h2 {
   color: white;
+  font-size: 1.2rem;
 }
 
 .react-datepicker__day--selected {
   background: #667eea !important;
   border-radius: 50%;
+}
+
+.react-datepicker__month {
+  margin: 0.6rem;
+
+}
+
+.react-datepicker__day {
+  margin: 0.25rem;
 }
 
 .inputs-container {
