@@ -1,12 +1,16 @@
 import { useState, useEffect } from 'react'
+import dayjs from 'dayjs'
+import DatePicker from 'react-datepicker'
+import { Calendar } from 'lucide-react'
+import "react-datepicker/dist/react-datepicker.css"
 import './EntryForm.css'
 
 function EntryForm({ entries, setEntries, win1, setWin1, win2, setWin2, win3, setWin3, selectedDate, setSelectedDate, isEditable, setIsEditable }) {
   const [ error, setError ] = useState('')
 
-  function handleDateChange(event) {
-    const newDate = event.target.value
-    setSelectedDate(newDate)
+  function handleDateChange(date) {
+    const newDate = dayjs(date).format('YYYY-MM-DD')
+    setSelectedDate(date)
     setError('')
     const [ winsObjExist ] = entries.filter(entry => entry.date === newDate)
     if (winsObjExist) {
@@ -66,12 +70,16 @@ function EntryForm({ entries, setEntries, win1, setWin1, win2, setWin2, win3, se
 
   return (
     <>
-      <input 
-        className='date-input'
-        type="date"
-        value={selectedDate}
-        onChange={handleDateChange}
-      />
+      <div className="date-input-container">
+        <DatePicker
+          selected={selectedDate}
+          onChange={handleDateChange}
+          dateFormat="dd.MM.yyyy"
+          className="date-input"
+          calendarClassName="custom-calendar"
+        />
+        <Calendar className='input-calendar-icon' size={18} />
+      </div>
       <h2>✏️What are your 3 wins today?</h2>
       <div className="inputs-container">
         <div style={{ display: 'flex', alignItems: 'center', gap: '8px'}}>
